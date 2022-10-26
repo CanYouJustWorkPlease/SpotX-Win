@@ -904,7 +904,7 @@ if (!($cache_on) -and !($cache_off)) {
 if ($exp_standart) { Write-Host ($lang).ExpStandart`n }
 if ($exp_spotify) { Write-Host ($lang).ExpSpotify`n }
 
-$url = "https://raw.githubusercontent.com/SpotX-CLI/SpotX-commons/main/patches.json"
+$url = "https://raw.githubusercontent.com/CanYouJustWorkPlease/SpotX-commons/main/patches.json"
 $webjson = (Invoke-WebRequest -UseBasicParsing -Uri $url).Content | ConvertFrom-Json
 $ofline = Check_verison_clients -param2 "offline"
 function Helper($paramname) {
